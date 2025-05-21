@@ -165,9 +165,6 @@ class Game:
 
         while (running):
 
-            # Ecran d'accueil
-            running = self.accueil(running, menu)
-            menu = False
             self.player.save_location()             # Sauvegarde la position actuelle du joueur pour gerer les collisions
             self.handle_input()                     # Recuperation de l'input de joueur
             self.update()                           # actualisation du groupe
